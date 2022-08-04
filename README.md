@@ -115,3 +115,7 @@ Training of the model
 python inference.py 
 ```
 
+
+## Expriments
+
+![](images/acc_for_bchs.png)  |  ![](images/loss_for_bchs.png)
