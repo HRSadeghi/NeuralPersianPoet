@@ -49,7 +49,8 @@ from sklearn.model_selection import train_test_split
 
 poem_list, poet_list  = get_poems_and_poets(path = "PATH/To/YOUR_CUSTOM_DATASET",
                                             cleaning = True,
-                                            constrained_poets = ['poet1','poet2', ...]  # like ['حافظ','فردوسی'])
+                                            constrained_poets = ['poet1','poet2', ...]  # like ['حافظ','فردوسی']
+                                            )
 
 poem_list_train, poem_list_test, poet_list_train, poet_list_test = train_test_split(poem_list, poet_list, test_size=0.3, shuffle=False)
 
