@@ -9,7 +9,8 @@ To compose a poem in this project, a hemistich is used as a context. The reason 
 
 As an example, we give the following hemistich as context to the network's encoder: 
 
-به نام خداوند جان و خرد
+به (/be/) نام (/nAm/) خداوند (/xodAvand/
+) جان (/jAn/) و (/va/) خرد (/xerad/)
 
 <br>And we expect the model to give us the following output:<br>
 
