@@ -77,7 +77,7 @@ If you plan to train your own tokenizer, you can use the following code snippet:
 ```python
 from tokenization.bpe_tokenization import BPE_Tokenization
 from dataLoader.utils import save_file
-bpet = BPE_Tokenization(poem_list_train+poem_list_test,
+bpet = BPE_Tokenization(poem_list_train,
                             extra_tokens= ["__spm", "__epm", "__she", "__ehe1", "__ehe2", "__pad"],  
                             num_tokens = 30000,
                             ngram_max = 10)
