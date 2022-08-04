@@ -22,9 +22,11 @@ pip install -r requirements.txt
 
 
 
-### Preparation
+### Data Preparation
 
-Download and extract 
+In this project, the ganjoor dataset is used, which includes ancient and contemporary Persian poems. All these poems are available online at [ganjoor website](https://ganjoor.net/).
+
+
 
 
 ### Training
