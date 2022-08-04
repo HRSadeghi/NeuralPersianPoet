@@ -45,6 +45,7 @@ If you want to use the customized dataset, you can first convert your poems' fil
 ```python
 from dataLoader.utils import load_file, save_file
 from dataLoader.utils import get_poems_and_poets
+from sklearn.model_selection import train_test_split
 
 poem_list, poet_list  = get_poems_and_poets(path = "PATH/To/YOUR_CUSTOM_DATASET",
                                             cleaning = True,
