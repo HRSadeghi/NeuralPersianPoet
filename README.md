@@ -13,7 +13,7 @@ We provide instructions how to install dependencies via  pip.
 First, clone the repository locally:
 
 ```
-git https://github.com/HRSadeghi/NeuralPersianPoet.git
+git clone https://github.com/HRSadeghi/NeuralPersianPoet.git
 ```
 
 Change the current directory to NeuralPersianPoet:
