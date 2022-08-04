@@ -14,7 +14,7 @@ As an example, we give the following hemistich as context to the network's encod
 
 <br>And we expect the model to give us the following output:<br>
 
-کز این برتر اندیشه بر نگذرد
+کز (/kaz/) این (/~in/) برتر (/bartar/) اندیشه (/~andiSe/) بر (/bar/) نگذرد (/nagzarad/)
 
 
 
