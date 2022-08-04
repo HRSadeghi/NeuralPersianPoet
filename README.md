@@ -5,6 +5,7 @@ Persian poetry has a very old history. This old history owes to great poets such
 ### Model architecture
 ![](images/sec2seq_poem.png)
 
+To compose a poem in this project, a hemistich is used as a context. The reason for this is that the model used here is a sequence-to-sequence model.
 
 
 
