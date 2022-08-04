@@ -3,7 +3,7 @@ Persian poetry has a very old history. This old history owes to great poets such
 
 
 ### Model architecture
-
+![](images/sec2seq_poem.png)
 
 
 
