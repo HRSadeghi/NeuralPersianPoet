@@ -1,5 +1,5 @@
 ## Neural Persian Poet: A sequence-to-sequence model for composing Persian poetry
-Persian poetry has a very old history. This old history owes to great poets such as Ferdowsi, Hafez, Khayyam, Saadi, Rudaki and Atar Neishabour. All these poets have composed poems in various formats with their inherent talent. In this project, we have tried to train a neural model to compose Persian poems in the same formats for us by taking inspiration from the poems composed by these poets in various formats. 
+Persian poetry has a very old history. This old history owes to great poets such as Ferdowsi (فردوسی), Hafez (حافظ), Khayyam (خیام), Saadi (سعدی), Rudaki (رودکی) and Atar Neishabour (عطار نیشابوری). All these poets have composed poems in various formats with their inherent talent. In this project, we have tried to train a neural model to compose Persian poems in the same formats for us by taking inspiration from the poems composed by these poets in various formats. 
 
 
 ### Model architecture
