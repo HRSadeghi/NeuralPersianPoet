@@ -30,13 +30,14 @@ After adding the dataset directory, we expect the structure of the project to be
 
 ```
 NeuralPersianPoet
+...
 ├── dataset
 │   ├── ganjoor.csv
 │   ├── poet_list_train.pickle
 │   ├── poet_list_test.pickle
 │   ├── poem_list_train.pickle
 │   ├── poem_list_test.pickle
-├── models
+├── dataLoader
 ...
 ```
 
@@ -61,8 +62,27 @@ save_file(poet_list_test, 'dataset/poet_list_test.pickle')
 ```
 
 ### Tokenizer Preparation
-Like the GPT model, Byte Pair Encoding (BPE) Tokenizer is used here to tokenize the poems. To use this tokenization, we need to train it. 
+Like the GPT model, Byte Pair Encoding (BPE) Tokenizer is used here to tokenize the poems. To use this tokenization, we need to train it. The tokenizer is trained with 30,000 tokens with a maximum length of 10 per each token. You can download the trained tokenizer from [here](https://drive.google.com/file/d/11SGCANSgxdzkHW4swPZKtav9DwW8VykO/view?usp=sharing). By downloading the bpe_tokenization.pkl file and placing it in the tokenization directory, the directory structure will be as follows:
 
+```
+NeuralPersianPoet
+├── tokenization
+│   ├── bpe_tokenization.py
+│   ├── bpe_tokenization.pkl
+│   ├── __init__.py
+├── saved_model
+...
+```
+If you plan to train your own tokenizer, you can use the following code snippet:
+```python
+from tokenization.bpe_tokenization import BPE_Tokenization
+bpet = BPE_Tokenization(poem_list_train+poem_list_test,
+                            extra_tokens= ["__spm", "__epm", "__she", "__ehe1", "__ehe2", "__pad"],  
+                            num_tokens = 30000,
+                            ngram_max = 10)
+
+save_file(bpet, 'tokenization/bpe_tokenization.pkl')
+```
 
 
 
