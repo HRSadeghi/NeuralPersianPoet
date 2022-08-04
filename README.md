@@ -7,6 +7,14 @@ Persian poetry has a very old history. This old history owes to great poets such
 
 To compose a poem in this project, a hemistich is used as a context. The reason for this is that the model used here is a sequence-to-sequence model.
 
+As an example, we give the following hemistich as context to the network's encoder:
+
+به نام خداوند جان و خرد
+And we expect the model to give us the following output:
+کز این برتر اندیشه بر نگذرد
+
+
+
 
 
 ### Installation
