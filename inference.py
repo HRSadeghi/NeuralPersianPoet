@@ -24,7 +24,6 @@ from dataLoader.utils import get_training, separate
 
 
 
-
 def predict_and_save(poem_list, 
                      encoder_model, 
                      decoder_model, 
