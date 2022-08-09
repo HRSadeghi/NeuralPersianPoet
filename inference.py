@@ -14,13 +14,13 @@
 
 import numpy as np
 from decoding import decode_sequence_lstm_encoder_decoder, decode_batch_lstm_encoder_decoder
-from tqdm import tqdm_notebook, tqdm
+from tqdm import tqdm
 from dataLoader.generator import DataGenerator
 from decoding import decode_batch_lstm_encoder_decoder
 from dataLoader.dataCleaner import remove_extra_tokens
 import pandas as pd
 from dataLoader.utils import get_training, separate
-from tqdm import tqdm_notebook
+
 
 
 
@@ -31,7 +31,7 @@ def predict_and_save(poem_list,
                      bpet,
                      path, 
                      max_num_he = 8):
-    for h in tqdm_notebook(range(2, max_num_he, 1)):
+    for h in tqdm(range(2, max_num_he, 1)):
         temp__ = get_hemisstich(poem_list, bpet, num_he = h, include_shorter = False)
         X__, Y__ = separate(temp__, bpet)
 
@@ -74,7 +74,7 @@ def generate_batch(contexts, Y_out, encoder_model, decoder_model, bpet, max_num_
 
     new_X = X__[:][:]
 
-    for i in tqdm_notebook(range(max_num_he)):
+    for i in tqdm(range(max_num_he)):
         gen_temp = DataGenerator(new_X,
                                 None,
                                 bpet,
